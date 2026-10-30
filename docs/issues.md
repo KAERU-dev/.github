@@ -1,24 +1,64 @@
 # Writing and picking up issues
 
-KAERU issues are written so a coding agent or a new contributor can pick one up
-and finish it without asking for missing context. Each issue is a
-self-contained brief. It says:
+KAERU repositories have two kinds of issue:
 
-- what is wrong or missing
-- where it lives in the code
-- how to approach it
-- what is out of scope
-- how to prove it is done
+- A **report**: a problem or an idea, written by anyone in their own words.
+  "I can't use X, here is a screenshot" is a good report. Nobody needs to know
+  the code to write one.
+- A **task**: a self-contained brief that a coding agent or a new contributor
+  can finish without asking for missing context. Maintainers write tasks,
+  usually from reports. A task says:
+  - what is wrong or missing
+  - where it lives in the code
+  - how to approach it
+  - what is out of scope
+  - how to prove it is done
 
-Start new issues from the templates in
-[`.github/ISSUE_TEMPLATE`](../.github/ISSUE_TEMPLATE). A repository without its
-own templates gets these by default. Pick the template that matches the type of
-work; each one asks only for the sections that type needs.
+The templates in [`.github/ISSUE_TEMPLATE`](../.github/ISSUE_TEMPLATE) cover
+both. A repository without its own templates gets these by default.
 
-## Header
+## Reporting a problem or an idea
 
-Every issue body starts with the same header, so readers can triage it without
-reading the whole issue:
+Use **Report a problem** or **Suggest a feature**. Fill in what you can and
+leave the rest blank. Screenshots, recordings, the version and the device help
+the most. The headers, statuses and sections described below are for tasks;
+reports do not need them.
+
+Reports arrive labeled `needs-triage`. A maintainer may ask follow-up
+questions in the comments before anything else happens.
+
+Do not report security problems in an issue. Follow the
+[security policy](../SECURITY.md) instead.
+
+## Triage: from report to task
+
+A maintainer, or an agent asked to triage, reads each `needs-triage` issue and
+does one of these:
+
+1. **Asks for what is missing** in a comment, when the problem cannot be
+   understood or reproduced yet.
+2. **Closes it**, saying why: a duplicate (link the original), working as
+   intended, or out of the product's scope.
+3. **Turns it into a task:**
+   - For a small report from a maintainer, edit the body: add the header and
+     the task sections.
+   - Otherwise, open a new issue from the matching **Task** template, with
+     `Reported in #N` in its body, so the reporter's words stay as they wrote
+     them. Then comment on the report with a link to the task.
+
+Then remove `needs-triage` and set the type, priority and status labels.
+
+Agents never implement an issue labeled `needs-triage`. It is not a task yet.
+
+## Writing a task
+
+Start from the **Task** template that matches the type of work. Each one asks
+only for the sections that type needs.
+
+### Header
+
+Every task body starts with the same header, so readers can see its state
+without reading the whole issue:
 
 ```markdown
 **Type:** Feature · **Priority:** P1 · **Size:** M · **Status:** Ready
@@ -41,7 +81,7 @@ the status changes, update the header, the labels and the checklist together.
 [`scripts/sync-labels.sh`](../scripts/sync-labels.sh) creates the standard
 labels in a repository.
 
-## Body sections
+### Body sections
 
 All templates share these rules:
 
@@ -71,9 +111,9 @@ All templates share these rules:
 Size the work to one PR. If an issue needs more than one PR, make it a
 `Tracking` issue and open child issues in this format.
 
-## Before dispatching an issue to an agent
+### Before dispatching a task to an agent
 
-An issue is `Ready` only when all of these are true:
+A task is `Ready` only when all of these are true:
 
 - [ ] The header is complete, and `Verified against` is a recent `main` commit.
 - [ ] Every path in the issue exists at that commit, or is marked as new.
@@ -84,12 +124,13 @@ An issue is `Ready` only when all of these are true:
 
 Re-verify paths after a large removal or refactor lands.
 
-## Working on an issue
+## Working on a task
 
 Agents and contributors follow the repository's `AGENTS.md` and the
 [contributing guide](../CONTRIBUTING.md). In short:
 
-1. Read the whole issue, its comments, and the issues it links. If its
+1. Read the whole issue, its comments, and the issues it links, including the
+   report it came from. If its
    `Verified against` commit is old, check that the cited files still match
    before coding.
 2. Work in your own branch or worktree, named after the issue

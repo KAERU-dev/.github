@@ -7,6 +7,7 @@ performance	FBCA04	Speed, memory and resource use
 security	D93F0B	Security hardening, secrets and data protection
 question	d876e3	Research or a decision to make
 tracking	000000	Groups child issues into one outcome
+needs-triage	ededed	A report that a maintainer has not reviewed yet
 agent-ready	0E8A16	Ready for an agent or contributor to start
 blocked	B60205	Waits for another issue to merge
 needs-decision	FBCA04	A maintainer must choose before implementation

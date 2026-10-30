@@ -1,6 +1,6 @@
 ---
-name: Infrastructure
-about: CI, packaging, release, deployment, tooling or repository setup
+name: "Task: infrastructure"
+about: "For maintainers and agents: CI, packaging, release, deployment, tooling or repository setup."
 title: ""
 labels: [infra]
 ---

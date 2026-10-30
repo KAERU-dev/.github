@@ -1,0 +1,58 @@
+name: Report a problem
+description: Something does not work as expected. No technical knowledge needed.
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Describe what you saw in your own words. A screenshot or a short recording helps more than anything else.
+
+        Do not include passwords or personal or health data. For a security problem, follow the [security policy](https://github.com/KAERU-dev/.github/blob/main/SECURITY.md) instead of opening an issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you were trying to do, and what went wrong.
+      placeholder: I tried to … but …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it happen?
+      description: The steps that lead to the problem, if you know them. Say whether it happens every time.
+      placeholder: |
+        1. Open …
+        2. Tap …
+        3. …
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag images or videos into this box.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Usually shown in Settings or About. Leave it blank if you are not sure.
+
+  - type: input
+    id: device
+    attributes:
+      label: Device and system
+      placeholder: Pixel 7, Android 15 — or Windows 11 — or Chrome on macOS
+
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: When it started, how often it happens, or anything you already tried.

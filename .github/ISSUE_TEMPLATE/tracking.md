@@ -1,6 +1,6 @@
 ---
-name: Tracking issue
-about: Group several issues that deliver one larger outcome
+name: "Task: tracking issue"
+about: "For maintainers and agents: group several issues that deliver one larger outcome."
 title: ""
 labels: [tracking]
 ---

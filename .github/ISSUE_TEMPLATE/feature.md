@@ -1,6 +1,6 @@
 ---
-name: Feature or improvement
-about: New capability, or a change to existing behavior
+name: "Task: feature or improvement"
+about: 'For maintainers and agents: a ready-to-work brief. To suggest an idea, use "Suggest a feature".'
 title: ""
 labels: [enhancement]
 ---
@@ -18,7 +18,8 @@ labels: [enhancement]
 
 ## Context
 
-<!-- Why it is needed, and which product direction it serves. -->
+<!-- Why it is needed, and which product direction it serves. Link the
+original suggestion (Suggested in #N), if any. -->
 
 ## Current state
 

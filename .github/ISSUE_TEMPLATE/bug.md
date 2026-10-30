@@ -1,6 +1,6 @@
 ---
-name: Bug
-about: Something behaves incorrectly
+name: "Task: bug fix"
+about: 'For maintainers and agents: a ready-to-work brief. To report a problem, use "Report a problem".'
 title: ""
 labels: [bug]
 ---
@@ -12,7 +12,7 @@ labels: [bug]
 
 ## Problem
 
-<!-- What is broken: steps from a known state, expected vs actual behavior,
+<!-- Link the original report (Reported in #N), if any. What is broken: steps from a known state, expected vs actual behavior,
 errors, version or commit, and device or platform. Say whether it was
 reproduced or found by reading the code. -->
 

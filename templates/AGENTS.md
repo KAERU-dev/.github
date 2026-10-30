@@ -30,7 +30,8 @@ Issues and PRs live in `KAERU-dev/<repo>`.
 
 1. Read the issue body **and its comments** (they carry dependency and conflict
    updates), plus every issue it links. Respect its **Status**: do not implement
-   an issue marked `Blocked by`, `Needs decision` or `Human only`. When it names
+   an issue marked `Blocked by`, `Needs decision` or `Human only`, or a report
+   labeled `needs-triage`; triage it first only when asked to. When it names
    a dependency, check whether that issue is already closed before treating it
    as a blocker.
 2. Check that the files the issue cites still exist and behave as described on

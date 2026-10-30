@@ -1,6 +1,6 @@
 ---
-name: Performance
-about: Something works but is too slow or uses too many resources
+name: "Task: performance"
+about: "For maintainers and agents: something works but is too slow or uses too many resources."
 title: ""
 labels: [performance]
 ---
