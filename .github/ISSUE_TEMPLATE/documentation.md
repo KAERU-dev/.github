@@ -1,6 +1,6 @@
 ---
-name: Documentation
-about: Missing, wrong or outdated documentation, for users or contributors
+name: "Task: documentation"
+about: "For maintainers and agents: missing, wrong or outdated documentation."
 title: ""
 labels: [documentation]
 ---

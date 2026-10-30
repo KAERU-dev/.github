@@ -16,10 +16,13 @@ changes before implementing them. Report vulnerabilities according to the
 [security policy](https://github.com/KAERU-dev/.github/blob/main/SECURITY.md).
 Keep sensitive details out of issues and pull requests.
 
-Open issues from the templates and follow
-[the issue guide](https://github.com/KAERU-dev/.github/blob/main/docs/issues.md),
-so each one can be picked up without extra context. Coding agents also follow
-the repository's `AGENTS.md`.
+To report a problem or suggest an idea, open an issue with **Report a
+problem** or **Suggest a feature**. Write it in your own words; a screenshot
+helps more than technical detail. Maintainers turn reports into tasks that can
+be picked up without extra context, as the
+[issue guide](https://github.com/KAERU-dev/.github/blob/main/docs/issues.md)
+describes. To work on code, pick a task, not a report labeled `needs-triage`.
+Coding agents also follow the repository's `AGENTS.md`.
 
 ## Branches and coordination
 

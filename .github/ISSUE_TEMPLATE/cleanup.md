@@ -1,6 +1,6 @@
 ---
-name: Cleanup or removal
-about: Refactor, or remove code, dependencies or dead paths, without adding features
+name: "Task: cleanup or removal"
+about: "For maintainers and agents: refactor, or remove code, dependencies or dead paths."
 title: ""
 labels: [cleanup]
 ---

@@ -6,12 +6,12 @@ agent standards.
 GitHub applies the community health files here to any repository in the
 organization that does not ship its own copy:
 
-| File                                                                   | What it covers                                             |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md)                                   | Branches, worktrees, validation, commits and pull requests |
-| [`SECURITY.md`](SECURITY.md)                                           | How to report a vulnerability without disclosing it        |
-| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE)                    | Issue templates, one per type of work                      |
-| [`.github/pull_request_template.md`](.github/pull_request_template.md) | Pull request template                                      |
+| File                                                                   | What it covers                                              |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md)                                   | Branches, worktrees, validation, commits and pull requests  |
+| [`SECURITY.md`](SECURITY.md)                                           | How to report a vulnerability without disclosing it         |
+| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE)                    | Report forms for anyone, and task templates for maintainers |
+| [`.github/pull_request_template.md`](.github/pull_request_template.md) | Pull request template                                       |
 
 These files are not applied automatically:
 

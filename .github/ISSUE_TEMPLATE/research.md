@@ -1,6 +1,6 @@
 ---
-name: Research or decision
-about: A question to answer, or a choice to make, before implementation
+name: "Task: research or decision"
+about: "For maintainers and agents: a question to answer, or a choice to make, before implementation."
 title: ""
 labels: [question]
 ---

@@ -1,0 +1,29 @@
+name: Suggest a feature
+description: An idea, or something you wish the product did. No technical knowledge needed.
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. The most useful part is the need behind it: what you are trying to do, and what gets in the way today.
+
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: The problem or need, in your own words.
+      placeholder: When I …, I want to … so that …
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: How do you imagine it working?
+      description: Optional. Any idea is welcome, even a rough one.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots, examples or anything else
+      description: Optional. Drag images into this box, or link to something similar elsewhere.
