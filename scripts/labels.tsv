@@ -1,0 +1,17 @@
+bug	d73a4a	Something isn't working
+enhancement	a2eeef	New feature or improvement
+documentation	0075ca	Improvements or additions to documentation
+cleanup	C5DEF5	Refactors, removals and dead code, with no user-visible change
+infra	1D76DB	CI, builds, releases, deployment and repository setup
+performance	FBCA04	Speed, memory and resource use
+security	D93F0B	Security hardening, secrets and data protection
+question	d876e3	Research or a decision to make
+tracking	000000	Groups child issues into one outcome
+agent-ready	0E8A16	Ready for an agent or contributor to start
+blocked	B60205	Waits for another issue to merge
+needs-decision	FBCA04	A maintainer must choose before implementation
+human-only	5319E7	Needs accounts, hardware, legal or external actions
+P0	B60205	Blocks the next release, or users are hurt now
+P1	D93F0B	Next cycle
+P2	FBCA04	Later
+P3	C5DEF5	Nice to have; no committed release
